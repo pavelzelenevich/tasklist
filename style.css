@@ -1,0 +1,9 @@
+.bad {
+    /*border-color: #ff0000;*/
+    border-color: rgba(237, 12, 12, 1);
+    box-shadow: 0 0 15px rgba(237, 12, 12, 1);
+}
+.good {
+    border-color: rgba(61, 237, 17, 1);
+    box-shadow: 0 0 15px rgba(61, 237, 17, 1);
+}
