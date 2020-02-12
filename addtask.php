@@ -48,7 +48,7 @@ if((!empty($_POST['taskname'])) && (!empty($_POST['taskstatus'])) && (!empty($_P
     $tasktext = $_POST['texttask'];
     $deadlinetask = $_POST['deadlinedate'];
     $pdo->query("DELETE FROM `todo` WHERE `todo`.`id` = '$taskid'");
-    $pdo->query("INSERT INTO `task`.`doing` ( `name`, `text`, `deadline`, `datetimecreate` ) VALUES ('$taskname', '$tasktext', '$deadlinetask', '$datetime' )");
+    $pdo->query("INSERT INTO `task`.`todo` ( `name`, `text`, `deadline`, `datetimecreate` ) VALUES ('$taskname', '$tasktext', '$deadlinetask', '$datetime' )");
     header('location:index.php');
 }
 
